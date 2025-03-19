@@ -13,3 +13,9 @@ body {
     font-size: 1rem;
     font-family: 'Playfair Display'; 
 }
+
+#contato {
+    background: var(--cor-principal) ;
+    background-size: cover;
+    padding: 4rem 0;
+}
