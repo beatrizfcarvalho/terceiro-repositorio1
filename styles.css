@@ -3,8 +3,8 @@
 :root{
     --cor-principal: #FF00BB;
     --cor1: #db009c;
-    --cor2: #ff9cff;
-    --cor3: #ebabcf;
+    --cor2: #ff6dff;
+    --cor3:  #f6bcf6;
     --preto: #000000;
     --branco: #FFFFFF;
 }
@@ -15,7 +15,25 @@ body {
 }
 
 #contato {
-    background: var(--cor-principal) ;
+    background: var(--cor-principal);
     background-size: cover;
     padding: 4rem 0;
+}
+
+.formulario{
+    background-color: var(--cor2);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: var(--cor1);
+    border: none;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: var(--cor2);
 }
