@@ -12,33 +12,33 @@
 
 <body>
     <header class="p-5" >
-        <h2>Cabeçalho</h2>
 
         <nav class="container d-flex justify-content-between align-items-center">
-            <img src="logo de moda feminina rosa.png" alt="Logotipo do canva" class="nav-img" loading="lazy" > 
+            <img src="img/Logo de moda feminina rosa .png" alt="Logotipo da Tropicália" class="nav-img" loading="lazy" > 
             <ul class="nav mt-5">
-                <li class="nav-item"> <a href="#inicio"> Início </a> </li>
-                <li class="nav-item"> <a href="#galeria"> Galeria </a> </li>
-                <li class="nav-item"> <a href="#contato"> Contato </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#inicio"> Início </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#galeria"> Galeria </a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#contato"> Contato </a> </li>
             </ul>
         </nav>
     </header>
     <main class="container my-5">
-        <h2>Corpo da página</h2>
+        
         <section id="inicio" class="my-5">
-        <div>
-            <div>
-                <h2>Boas Vindas</h2>
-                <img src="img/Logo de moda feminina rosa .png" alt="logotipo do canva"
-                class="mb-3" width="563" height="278" loading="lazy" >
-                <a href="#Bia Cosmeticos" class="btn btn-primary btn-lg botao-inicio fw-semibold" > Quero conhecer!</a>            
-            </div> 
-        </div>        
-        <section id="canva" class="my-5 pt-6 secao-cosmeticos"> <!-- SEU TEMA do seu Site-->
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h2>Boas-vindas</h2>
+                    <img src="img/biac.png2.webp" alt="Logotipo do canva"  class="mb-3" width="563" height="278" loading="lazy" >
+                    <a href="#bia cosmeticos"" class="btn btn-primary btn-lg botao-inicio fw-semibold" > Quero conhecer! </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="bia cosmeticos" class="my-5 pt-6 secao-cosmeticos"> <!-- SEU TEMA do seu Site-->
             <div class="container d-flex align-items-center" >
                 <div class="col-5" >
-                    <h2>O que é a bia cosmeticos?</h2>
-                    <p class="p-2" >Bia cosméticos é um site onde voce encontra produtos para cabelo, unhas, cremes para o corpo, perfumes, diversos tipos de assessorios e muitos mais.</p>
+                    <h2>O que é a bia cosmeticos</h2>
+                    <p class="p-2">A bia cosmeticos é um site onde voce encontra produtos de cabelo, unhas, cremes para o corpo, perfumes e diversos produtos de beleza.</p>
                 </div>
             </div>
 
@@ -48,10 +48,10 @@
             <h2 class="text-center pt-5"> Galeria </h2>
             <div class="container p-3 mt-3 fundo-galeria">
                 <div class="col-md-4">
-                    <img src="" alt="img3c.webp" class="img-fluid rounded-5" loading="lazy">
+                    <img src="img/biac.png3.webp" alt="Imagem da loja" class="img-fluid rounded-5" loading="lazy">
                 </div>
                 <div class="col-md-4">
-                    <img src="" alt="biac.png" class="img-fluid rounded-5" loading="lazy">
+                    <img src="img/biac.png4.webp" alt="Imagem da loja " class="img-fluid rounded-5" loading="lazy">
                 </div>
             </div>
 
@@ -59,39 +59,37 @@
 
         <section id="contato">
             <div class="container p-5 d-flex justify-content-center" >
-           <!-- caixa do formulário com 60% de largura-->
-           <h2 class="mb-3" >Entre em contato</h2>
-           <form>
-            <div class="form-gorup mb-3">
-                <label for="nome"></label>
-                <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1 placeholder="Digite seu nome" >
-
+                <!-- Caixa do formulário com 60% de largura-->
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3" >Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label  for="nome"> Nome </label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"  placeholder="Digite seu nome completo" >
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email"> Email </label>
+                            <input type="email" name="email" id="email" class="form-control rounded-3 mt-1">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem"> Mensagem </label>
+                            <textarea name="mensagem" id="mensagem" class="form-control rounded-4 mt-2"  rows="4" placeholder="Escreva sua mensagem"  ></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao"  >Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="form-group mb-3">
-            <label for="email"> Email </label>
-            <input type="email" name="email" id="email" class="form-control rounded-3 mt-1>
-
-            </div>
-            <div class="form-gorup mb-3">
-             <label for="mensagem"> Mensagem </label>
-             <textarea name="mensagem" id="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem" ></textarea>
-            
-            </div>
-            <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-primary btn-lg rounded-pi11 tamanho-botao">Enviar mensagem</button>            </div>
-           </form>
-        </div>
-
         </section>
 
     </main>
     <footer class="text-center p-3 fst-italic">
-        <h2>Rodapé</h2>
         <p>Acesse nossas redes:</p>
         <i class="bi bi-whatsapp"></i>
         <i class="bi bi-instagram"></i>
         <i class="bi bi-tiktok"></i>
-        <p>Desenvolvido por Beatriz Farias de Carvalho. Projeto fictício sem fins comerciais</p>
+        <p class="mt-3">Desenvolvido por Beatriz Farias de Carvalho. Projeto fictício sem fins comerciais</p>
     </footer>
 </body>
 

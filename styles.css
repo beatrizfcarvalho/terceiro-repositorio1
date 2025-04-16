@@ -1,47 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-:root{
-    --cor-principal: #FF00BB;
-    --cor1: #db009c;
-    --cor2: #ff6dff;
-    --cor3:  #f6bcf6;
+:root {
+    --cor-principal:;
+    --cor1: #a20087;
+    --cor2: #b00780;
+    --cor3: #ed00f1;
     --preto: #000000;
     --branco: #FFFFFF;
+    --rosa:  #f461cc;
 }
 
 body {
     font-size: 1rem;
-    font-family: 'Playfair Display'; 
+    font-family: 'Montserrat'; /*o nome da sua fonte*/
 }
-
 
 section {
     padding-bottom: 5rem;
 }
 
-.nav-link{
-    color: var(--cor-principal);
+header {
+    background-color: var(--branco);
+}
+
+.nav-link {
+    color: var(--rosa);
     font-weight: 600;
 }
 
-.inicio-fundo{
-    background-image: url(img/biac.png3.webp);
+.inicio-fundo {
+    background-image: url(img/biac.png4.webp);
     background-size: cover;
     background-position: right;
     border-radius: 80px;
-    width: 606px;
-    margin: 0auto;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
 }
 
-.esquerda-conteúdo{
-    display:flex;
+.esquerda-conteudo {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap:1rem;
 }
 
 .botao-inicio {
-    background-color: var(--cor2);
+    background-color: var(--rosa);
     border-radius: 30px;
     border: none;
     width: 14em;
@@ -49,25 +55,37 @@ section {
     align-content: center;
 }
 
+
 .display-4 {
-    text-shadow: -5px 5px var(--cor1);
+    text-shadow: -5px 5px var(--rosa);
 }
 
-#bia cosmeticos {
+#tropicalia {
     position: relative;
     padding-top: 5rem;
     margin-top: 3rem;
-    background: var(--cor3);
+    background: var(--cor2);
     background-size: 180px 180px; /* Ajuste o tamanho conforme necessário*/
 }
 
-#bia cosmeticos .container {
+#tropicalia .container {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     z-index: 1; /* Garante que o conteúdo fica acima das imagens de backgronde se houverem */
 }
+
+
+
+
+
+
+
+
+
+
+
 #contato {
     background: var(--cor-principal);
     background-size: cover;
@@ -75,7 +93,7 @@ section {
 }
 
 .formulario{
-    background-color: var(--cor2);
+    background-color: var(--branco);
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -83,7 +101,7 @@ section {
 }
 
 .formulario button {
-    background-color: var(--cor1);
+    background-color: var(--cor3);
     border: none;
     font-weight: bold;
 }
